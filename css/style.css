@@ -1,0 +1,98 @@
+/**************************************************************/
+/*                    ****** FONTS ******                     */
+/**************************************************************/
+
+
+/**************************************************************/
+/*                  ****** VARIABLES ******                   */
+/**************************************************************/
+
+
+
+/**************************************************************/
+/*                    ****** RESET ******                     */
+/**************************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/**************************************************************/
+/*                    ****** LAYOUT ******                    */
+/**************************************************************/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+    display: grid;
+    /* grid-template-rows: 30% 70%; */
+    grid-template-rows: 25% 1fr;
+}
+
+header {
+    background-color: lightcoral;
+    text-align: center;
+}
+
+main {
+    background-color: lightgreen;
+    padding: 0 11%;
+    display: grid;
+    /* grid-template-columns: 1fr 24,3% 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4.62%;
+    justify-items: center;
+}
+
+.box {
+    background-color: lightblue;
+    width: 92%;
+    /* width: 75%; */
+    aspect-ratio: 7 / 5;
+}
+
+.left-box-supervisor {
+    grid-row: 1 / span 2;
+    /* justify-self: start; */
+    align-self: center;
+}
+
+.middle-top-box-teamBuilder {
+    /* width: 100%; */
+    grid-column: 2 / 3;
+    align-self: end;
+}
+
+.middle-bottom-box-karma {
+    /* width: 100%; */
+    grid-column: 2 / 3;
+    /* align-self: start; */
+}
+
+.right-box-calculator {
+    grid-column: 3 / 4;
+    grid-row: 1 / span 2;
+    /* justify-self: end; */
+    align-self: center;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+
+/*           *** LAYOUT - mobile ***           */
+/***********************************************/
+
+
+
+
+
+/**************************************************************/
+/*                    ****** DESIGN ******                    */
+/**************************************************************/
