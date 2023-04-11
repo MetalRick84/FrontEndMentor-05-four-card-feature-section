@@ -2,6 +2,7 @@
 /*                    ****** FONTS ******                     */
 /**************************************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 /**************************************************************/
 /*                  ****** VARIABLES ******                   */
@@ -57,29 +58,22 @@ main {
 
 .left-box-supervisor {
     grid-row: 1 / span 2;
-    /* justify-self: start; */
     align-self: center;
-    /* left: 7%; */
 }
 
 .middle-top-box-teamBuilder {
-    /* width: 100%; */
     grid-column: 2 / 3;
     align-self: end;
 }
 
 .middle-bottom-box-karma {
-    /* width: 100%; */
     grid-column: 2 / 3;
-    /* align-self: start; */
 }
 
 .right-box-calculator {
     grid-column: 3 / 4;
     grid-row: 1 / span 2;
-    /* justify-self: end; */
     align-self: center;
-    /* right: 7%; */
 }
 
 
@@ -92,12 +86,45 @@ footer {
 /*           *** LAYOUT - mobile ***           */
 /***********************************************/
 
+@media only screen and (max-width: 460px) {
+    * {
+        border: 1px solid green;
+    }
+
+    body {
+        grid-template-rows: 1fr;
+    }
+
+    header {
+        height: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8%;
+    }
+
+    .box {
+        width: 100%;
+        align-self: center;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
 
 
 
 /**************************************************************/
 /*                    ****** DESIGN ******                    */
 /**************************************************************/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 .box {
     /* position: relative; */
