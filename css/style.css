@@ -52,12 +52,14 @@ main {
     width: 92%;
     /* width: 75%; */
     aspect-ratio: 7 / 5;
+    position: relative;
 }
 
 .left-box-supervisor {
     grid-row: 1 / span 2;
     /* justify-self: start; */
     align-self: center;
+    /* left: 7%; */
 }
 
 .middle-top-box-teamBuilder {
@@ -77,6 +79,7 @@ main {
     grid-row: 1 / span 2;
     /* justify-self: end; */
     align-self: center;
+    /* right: 7%; */
 }
 
 
@@ -92,7 +95,16 @@ footer {
 
 
 
-
 /**************************************************************/
 /*                    ****** DESIGN ******                    */
 /**************************************************************/
+
+.box {
+    /* position: relative; */
+}
+
+.box img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
