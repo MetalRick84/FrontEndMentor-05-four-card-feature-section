@@ -8,6 +8,17 @@
 /*                  ****** VARIABLES ******                   */
 /**************************************************************/
 
+:root {
+    --font-dark-color: hsl(234, 12%, 34%);
+    --font-light-color: hsl(229, 6%, 66%);
+   
+    --supervisor-color: hsl(180, 62%, 55%);
+    --teamBuilder-color: hsl(0, 78%, 62%);
+    --karma-color: hsl(34, 97%, 64%);
+    --calculator-color: hsl(212, 86%, 64%);
+
+    --shadow-color: hsl(213, 37%, 89%);
+}
 
 
 /**************************************************************/
@@ -17,6 +28,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-size: 100%;
 }
 
 /**************************************************************/
@@ -28,30 +40,28 @@ body {
     height: 100vh;
     height: 100svh;
     display: grid;
-    /* grid-template-rows: 30% 70%; */
     grid-template-rows: 25% 1fr;
 }
 
 header {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     text-align: center;
 }
 
 main {
-    background-color: lightgreen;
-    padding: 0 11%;
+    /* background-color: lightgreen; */
+    padding: 0 9%;
     display: grid;
-    /* grid-template-columns: 1fr 24,3% 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 4.62%;
+    column-gap: 2%;
     justify-items: center;
 }
 
 .box {
-    background-color: lightblue;
-    width: 92%;
-    /* width: 75%; */
+    /* background-color: lightblue; */
+    width: 98%;
     aspect-ratio: 7 / 5;
     position: relative;
 }
@@ -87,9 +97,6 @@ footer {
 /***********************************************/
 
 @media only screen and (max-width: 460px) {
-    * {
-        border: 1px solid green;
-    }
 
     body {
         grid-template-rows: 1fr;
@@ -124,14 +131,61 @@ footer {
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--font-light-color);
+}
+
+header h2 {
+    margin-top: 1.5em;
+    font-size: 2.4em;
+    font-weight: 200;
+    color: var(--font-dark-color);
+}
+
+header h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+    color: var(--font-dark-color);
+}
+
+header p {
+    width: 36em;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {
-    /* position: relative; */
+    border-radius: 5px;
+    box-shadow: 0 5px 5px var(--shadow-color);
+    border-top: 4px solid black;
+    box-sizing: border-box;
+    padding: 9%;
 }
 
 .box img {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 9%;
+    bottom: 9%;
+    box-sizing: border-box;
+}
+
+.box h3 {
+    color: var(--font-dark-color);
+}
+
+.left-box-supervisor {
+    border-color: var(--supervisor-color);
+}
+
+.middle-top-box-teamBuilder {
+    border-color: var(--teamBuilder-color);
+}
+
+.middle-bottom-box-karma {
+    border-color: var(--karma-color);
+}
+
+.right-box-calculator {
+    border-color: var(--calculator-color);
 }
